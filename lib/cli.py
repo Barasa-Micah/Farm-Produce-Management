@@ -6,7 +6,7 @@ def create_database(database_name):
     connection = sqlite3.connect(database_name)
     cursor = connection.cursor()
 
-#   schema to create tables
+
     cursor.execute('''CREATE TABLE IF NOT EXISTS data (
         id INTEGER PRIMARY KEY,
         name TEXT,
